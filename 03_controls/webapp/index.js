@@ -1,18 +1,11 @@
 sap.ui.define([
-	"sap/m/Button",
-	"sap/m/MessageToast",
-    "sap/m/Text"
-], function (Button, MessageToast, Text) {
+	"sap/ui/core/mvc/XMLView"
+], function (XMLView) {
     "use strict";
 
-    new Text({
-        text: "Hello UI5!"
-    }).placeAt("content");;
-
-    new Button({
-		text: "Ready...",
-		press: function () {
-			MessageToast.show("Hello World!");
-		}
-	}).placeAt("content");
+    XMLView.create({
+		viewName: "n.miranda.ui.view.App"
+	}).then(function(oView){
+		oView.placeAt("content");
+	});
 })
