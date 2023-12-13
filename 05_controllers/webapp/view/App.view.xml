@@ -1,0 +1,5 @@
+<mvc:View controllerName="n.miranda.ui.controller.App"
+          xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc">
+          <Button text="Say hi" press="onPress"/>
+</mvc:View>
