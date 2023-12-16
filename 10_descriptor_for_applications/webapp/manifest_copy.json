@@ -1,0 +1,103 @@
+{
+    "_version": "1.1.0",
+    "start_url": "<startUrl>",
+    "sap.app": {
+        "id": "n.miranda.ui",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{appTitle}}",
+        "type": "application",
+        "description": "{{appDescription}}",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "_version": "1.1.0",
+        "tags": {
+            "keywords": [
+            ]
+        }
+    },
+    "sap.ui": {
+        "_version": "1.1.0",
+        "technology": "UI5",
+        "icons": {
+            "icon": "<icon>",
+            "favIcon": "<favIcon>",
+            "phone": "<phone>",
+            "phone@2": "<phone@2>",
+            "tablet": "<tablet>",
+            "tablet@2": "<tablet@2>"
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_bluecrystal"
+        ]
+    },
+    "sap.ui5": {
+        "_version": "1.1.0",
+        "resources": {
+            "js": [
+                {
+                    "uri": "<uri>"
+                }
+            ],
+            "css": [
+                {
+                    "uri": "<uri>",
+                    "id": "<id>"
+                }
+            ]
+        },
+        "dependencies": {
+            "minUI5Version": "1.60",
+            "libs": {
+                "sap.m": {}
+            },
+            "components": {
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "n.miranda.ui.i18n.i18n",
+                    "supportedLocales": [
+                        ""
+                    ],
+                    "fallbackLocale": ""
+                },
+                "uri": "<uriRelativeToManifest>"
+            }
+        },
+        "rootView": {
+            "viewName": "n.miranda.ui.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
+        "handleValidation": false,
+        "config": {},
+        "routing": {},
+        "extends": {
+            "component": "<extendedComponentId>",
+            "minVersion": "<minComp1Version>",
+            "extensions": {}
+        },
+        "contentDensities": {
+            "compact": false,
+            "cozy": false
+        }
+    },
+    "sap.platform.abap": {
+        "_version": "1.1.0",
+        "uri": "<uri>"
+    },
+    "sap.platform.hcp": {
+        "_version": "1.1.0",
+        "uri": "<uri>"
+    }
+}
