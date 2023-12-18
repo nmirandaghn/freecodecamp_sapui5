@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="n.miranda.ui.controller.HelloPanel"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Panel
+        headerText="{i18n>helloPanelTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto"
+    >
+        <content>
+            <Button
+                id="helloDialogButton"
+                text="{i18n>openDialogButtonText}"
+                press=".onOpenDialog"
+                class="sapUiSmallMarginEnd"
+            />
+            <Button
+                text="{i18n>showHelloButtonText}"
+                press=".onSayHiButton"
+                class="myCustomButton"
+            />
+            <Input
+                value="{/recipient/name}"
+                description="Hello {/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%"
+            />
+            <Text
+                text="Hello {/recipient/name}"
+                class="sapUiSmallMargin"
+            />
+            <FormattedText
+                htmlText="Hello {/recipient/name}"
+                class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+            />
+        </content>
+    </Panel>
+</mvc:View>
