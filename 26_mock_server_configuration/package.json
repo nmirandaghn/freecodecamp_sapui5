@@ -1,0 +1,15 @@
+{
+  "name": "sap-ui5-walkthrough",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ui5 serve -o test/mockServer.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ui5-middleware-simpleproxy": "^3.2.10"
+  }
+}
