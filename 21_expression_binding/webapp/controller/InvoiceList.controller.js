@@ -4,7 +4,7 @@ sap.ui.define([
 ], (Controller, JSONModel) => {
     "use strict";
 
-    return Controller.extend("ui5.walkthrough.controller.InvoiceList", {
+    return Controller.extend("n.miranda.ui.controller.InvoiceList", {
         onInit() {
             const oViewModel = new JSONModel({
                 currency: "EUR"
